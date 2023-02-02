@@ -543,6 +543,116 @@ footer .copyright{
   line-height: 25px;
 }
 
+/*shopping cart*/
+.shopcart{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 360px;
+  min-height: 100vh;
+  padding: 20px;
+  background: #e3e6f3;
+  box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  text-transform: 0.3s;
+}
+
+.shopcart.active{
+  right: 0;
+}
+
+.cart-title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.detail-box{
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cart-product-title{
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.cart-price{
+  font-weight: 500;
+}
+
+.cart-qty{
+  border: 1px solid #088178 ;
+  outline-color: #041e42;
+  width: 2.4rem;
+  padding: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove{
+  font-size: 24px;
+  color: #088178;
+  cursor: pointer;
+}
+
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid #041e42;
+  padding-top: 10px;
+}
+
+.total.title{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price{
+  margin-left: 0.5rem;
+}
+
+.but-buy{
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background:#cce7d0;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.but-buy:hover{
+  border: 1px solid #606063;
+}
+
+#close-cart{
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: #088178;
+  cursor: pointer;
+}
+
 /*Responsive with Start Media Query*/
 @media (max-width: 799px) {
   #navbar{
@@ -660,4 +770,20 @@ footer .copyright{
   #newletter .form{
     width: 100%;
   }
+
+  /*Single Product*/
+  #prodetails{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image{
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #prodetalis .single-pro-details{
+    width: 100%;
+  }
+
 }
