@@ -143,7 +143,6 @@ body{
   display: none;
 }
 
-
 /*Homepage*/
 #hero{
   background-image: url(img/hero4.png);
@@ -451,6 +450,98 @@ footer .copyright{
   text-align: center;
 }
 
+/*Shop Page*/
+#page-header{
+  background-image: url(img/banner/b1.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+  color: #fff;
+}
+
+#pagination{
+  text-align: center;
+}
+
+#pagination a{
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*Single Product*/
+#prodetails{
+  display: flex;
+  margin-top: 20px;
+
+}
+
+#prodetails .single-pro-image{
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+  width: 50%;
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+  font-size: 26px;
+}
+
+#prodetails .single-pro-details input{
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+  outline: none;
+}
+
+#prodetails .single-pro-details button{
+  background-color: #088178;
+  color: #fff;
+}
+
+#prodetails .single-pro-details span{
+  line-height: 25px;
+}
+
 /*Responsive with Start Media Query*/
 @media (max-width: 799px) {
   #navbar{
@@ -525,6 +616,51 @@ footer .copyright{
 
   #newsletter .form{
     width: 100%;
+  }
+
+  /*About Page*/
+  #page-header.about-header{
+    background-image: url(img/banner/c3.jpg);
+  }
+
+  #about-head{
+    display: flex;
+    align-items: center;
+  }
+
+  #about-head img{
+    width: 50%;
+    height: auto;
+  }
+
+  #about-head div{
+    padding-left: 40px;
+  }
+
+  #about-app{
+    text-align: center;
+  }
+
+  #about-app a{
+    color: #ffbd27;
+    text-decoration: none;
+  }
+
+  #about-app a:hover{
+    color: #ffbd27;
+    text-decoration: underline;
+  }
+
+  #about-app .video{
+    width: 60%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+  }
+
+  #about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
   }
 }
 
