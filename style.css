@@ -875,6 +875,7 @@ footer .copyright{
   font-weight: 600;
   color: #000;
 }
+
 /*Responsive with Start Media Query*/
 @media (max-width: 799px) {
   #navbar{
@@ -950,8 +951,6 @@ footer .copyright{
   #newsletter .form{
     width: 100%;
   }
-
-  
 }
 
 @media (max-width: 470px) {
